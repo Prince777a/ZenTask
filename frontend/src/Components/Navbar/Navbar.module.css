@@ -1,0 +1,119 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding: 0 360px 0 360px;
+    background: #f2ebf7;
+    border-bottom: 2px solid #ececec
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4f46e5;
+  cursor: pointer;
+}
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+      color: #6b7280;
+
+}
+
+/* .link {
+  text-decoration: none;
+  color: #6b7280;
+  transition: 0.5s;
+  position: relative;
+} */
+
+.link:hover {
+  color: #1b263d;
+}
+
+.active {
+  text-decoration: none;
+  color: #4f46e5;
+  position: relative;
+  transition: color 1.25s ease;
+}
+
+
+.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #4f46e5;
+  transition: all 1.0s ease;
+}
+
+/* .link {
+  position: relative;
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+} */
+
+.link {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+  position: relative;
+  transition: 0.5s;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #4f46e5;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 5px;
+    height: 30px;
+
+}
+
+.iconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  color: #575759;
+
+  transition: all 0.2s ease;
+}
+
+.iconBtn:hover {
+  color: black;
+  transition: 0.5s;
+}

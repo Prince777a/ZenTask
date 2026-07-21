@@ -1,0 +1,39 @@
+.container {
+    /* background-color: aqua; */
+    margin-top: 55px;
+
+}
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    
+}
+
+.heading{
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #111827;
+}
+.badges{
+    display: flex;
+    gap: 8px;
+}
+.pending{
+    background: #dcf1ff;
+    color: #0369a1;
+    font-size: 0.70rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+.completed{
+    background: #c5bae9;
+    color: #034079dd;
+    font-size: 0.70rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+}

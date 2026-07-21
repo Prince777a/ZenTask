@@ -1,0 +1,50 @@
+.card {
+    background: #ffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px ;
+    padding: 24px;
+    width: 100%;
+}
+.titleInput {
+    width: 100%;
+    outline: none;  /* outline means outline when you click the input box*/
+    border: none;
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 20px;
+    background: transparent;
+
+}
+.descInput {
+    width: 100;
+    border: none;
+    outline: none ;
+    font-size: 0.8rem;
+    color: #6b7280;
+    background: transparent;
+    height: 100px;
+    resize: none;  
+    /* background-color: #3730a3; */
+    width: 650px;
+
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    padding-right: 40px;
+}
+
+.btn {
+    padding: 10px 30px;
+    background : #3730a3;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  
+}
+.btn:hover {
+    background-color: #4f46e5;
+}
