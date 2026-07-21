@@ -17,3 +17,17 @@
     color: #6b7280;
     margin-bottom: 32px;
 }
+.quote{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.quo{
+    color: #6b7280;
+    font-family: 'Courier New', monospace;
+    /* font-family: 'Arial', sans-serif;   */
+      /* font-family: 'Georgia', serif;    */
+      letter-spacing: 5px;
+
+      
+}

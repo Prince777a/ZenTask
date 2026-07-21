@@ -48,10 +48,40 @@
     margin: 0;
 }
 .checkbtn {
-    border: none;
+    border: solid 0.3px gray;
     outline: none;
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    background-color: #6b7280;
+    background-color: transparent;
+    /* background-color: #6b7280; */
+    color: #3730a3;
+    cursor: pointer;
+    /* font-size: 10px; */
+    margin-bottom: 20px;
+    
+}
+.checkbtn:hover{
+    color: white;
+    background-color: #3730a3;
+    transition: 0.5s;
+}
+.cardDone {
+    /* background-color: #3730a3; */
+    background: #f2f1f1;
+    /* border: 1px solid #e5e7eb; */
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 20px 24px;
+    opacity: 0.6;
+    
+
+}
+.titleDone {
+    text-decoration: line-through;
+    color: #103378;
+}
+
+.checkDone {
+    background: transparent;
 }

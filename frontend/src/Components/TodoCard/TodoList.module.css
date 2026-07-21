@@ -37,3 +37,20 @@
     padding: 4px 10px;
     border-radius: 20px;
 }
+.devider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 34px 0px;
+    text-align: center;
+    color: #84878d;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+}
+.devider::before,
+.devider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #8290ab;
+    margin: 0 12px;
+}

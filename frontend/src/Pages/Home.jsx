@@ -5,6 +5,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import CreateTodo from "../Components/TodoCard/CreateTodo";
 // import { BrowserRouter } from "react-router-dom";
 import styles from "../Pages/Home.module.css";
+import Footer from "../Components/Footer/Footer";
 
 
 function Home() {
@@ -40,11 +41,17 @@ function Home() {
                 <CreateTodo onAdd={fetchTodos}></CreateTodo>
 
                 <div>
-                    <TodoList todos ={todos}></TodoList>
+                    <TodoList todos ={todos} onUpdate={fetchTodos}></TodoList>
                 </div>
 
+                <div className={styles.quote}>
+                    <span className={styles.quo}> BREATHE IN WORK OUT</span>
+                </div>
+      
 
             </div>
+             
+            <Footer></Footer>
             
  
        
