@@ -4,22 +4,35 @@ import styles from "../TodoCard/TodoCard.module.css"
 // import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { IoMdCheckmark } from "react-icons/io";
 import { updateTodo } from "../../Services/Todoapi";
+import { useNavigate } from "react-router-dom"
+
 
 
 function TodoCard({todosss , onUpdate , isCompleted}) {
-     console.log("HEYY");
-    console.log("TodoCard" , todosss);
+    // console.log("HEYY");
+    // console.log("TodoCard" , todosss);
+
+    const navigate = useNavigate();
+
+    
 
     async function handleComplete() {
         await updateTodo(todosss._id);
         onUpdate();
     }
+
+    // HandleFocus
+    function handleFocus() {
+        navigate("/focus" , {state : { todo : todosss}});
+    }
+
+
     return (
         <>
             <div className={isCompleted ? styles.cardDone : styles.card}>
 
                 <div className={styles.complete}>
-                    <button className={styles.comp}> Complete? </button>
+                    <button className={styles.comp} onClick={handleFocus}> Complete? </button>
                 </div>
                 
                 <div className={styles.data}>

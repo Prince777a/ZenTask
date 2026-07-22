@@ -7,7 +7,7 @@ function TodoList({todos , onUpdate}) {
     const completed = todos.filter( t=> t.completed);
 
 
-    console.log("TodoList Todos" , todos);
+    // console.log("TodoList Todos" , todos);
 
     return (
         <>

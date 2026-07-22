@@ -14,8 +14,8 @@ function Home() {
     const fetchTodos = async () => {
             const data = await getTodos();
 
-            console.log("data is" , data);
-            console.log("datas it " , data.todos);
+            // console.log("data is" , data);
+            // console.log("datas it " , data.todos);
             setTodos(data.todos);
             // console.log("todo after updating is" , data.todos);
         };
