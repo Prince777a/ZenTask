@@ -1,4 +1,5 @@
 import { useEffect, useState  , } from "react";
+import styles from "../FocusComp/TimerCard.module.css";
 
 function TimerCard({data}) {
     console.log("Timer card data" , data);
@@ -19,7 +20,7 @@ function TimerCard({data}) {
                     setSeconds(seconds - 1);
                 } else if(minutes > 0) {
                     setMinutes(minutes - 1);
-                    // setSeconds(59);
+                    setSeconds(59);
                 } else {
                     setIsRunning(false);
                 }
@@ -36,19 +37,37 @@ function TimerCard({data}) {
     //     setSeconds(0);
     //     isRunning(true);
     // }
+
+    const pad = (num) => String(num).padStart(2 , "0");
     
     return (
         <>
-            <div>
-                <h1>{minutes} : {seconds} </h1>
+            <div className={styles.card}>
+                <h1 className={styles.timer}>
+                    {pad(minutes)}:{pad(seconds)}
+                    
+                </h1>
 
-                <p> FOCUSING ON </p>
-                <h2>{data.title}</h2>
+                <p className={styles.label}> FOCUSING ON </p>
+                <h2 className={styles.title}>{data.title}</h2>
 
                 {/* <button onClick={handleStart}>Sart</button> */}
-                <button onClick={() => setIsRunning(!isRunning)}>
-                {isRunning ? "Pause" : "Resume"}
-            </button>
+
+                <div className={styles.actions}>
+                    <button
+                    className={styles.playBtn}
+                    onClick={() => setIsRunning(!isRunning)}
+                    aria-label={isRunning ? "Pause timer" : "Start timer"}
+                    >
+                    {isRunning ? "❚❚" : "▶"}
+                </button>
+
+                        <button className={styles.completeBtn} onClick={() => onComplete?.(data)}>
+                            Complete Task
+                        </button>
+
+                </div>
+                
 
             </div>
         </>
