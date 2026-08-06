@@ -1,7 +1,7 @@
 import { useEffect, useState  , } from "react";
 import styles from "../FocusComp/TimerCard.module.css";
 
-function TimerCard({data}) {
+function TimerCard({data , onComplete}) {      // function can be passed down as a prop alright
     console.log("Timer card data" , data);
 
     const [minutes, setMinutes] = useState(25);

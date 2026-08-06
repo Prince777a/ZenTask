@@ -79,5 +79,6 @@
 }
 
 .completeBtn:hover {
-    background: #f9fafb;
+    background: #c1bdfc;
+    transition: 0.3s;
 }
