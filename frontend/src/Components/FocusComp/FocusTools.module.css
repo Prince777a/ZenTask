@@ -1,0 +1,104 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+ 
+    max-width: 720px;
+    
+    margin: 15px auto 0;
+     gap: 10px;
+}
+
+.tools{
+    display: flex;
+    /* justify-content: center; */
+    width: 360px;
+    align-items:center;
+    /* background-color: aqua; */
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    gap: 12px;
+}
+
+
+.tools:hover {
+   
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quote{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: none; */
+    
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 15px auto 0;
+    border-radius: 16px;
+
+
+}
+
+.music_icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #eef0ff;
+    color: #4338ca;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.leaf_icon {
+    color: green;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    animation: wobble 2s ease-in-out infinite;
+    
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+.quote_text{
+    color: gray;
+    font-size: small;
+    display: inline-block;
+    animation: fadeSlide 1s ease;
+
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

@@ -15,7 +15,7 @@ function TimerCard({data , onComplete}) {      // function can be passed down as
         let timer ;
 
         if (isRunning) {
-            timer = setInterval ( () => {
+            timer =  setInterval ( () => {
                 if (seconds > 0) {
                     setSeconds(seconds - 1);
                 } else if(minutes > 0) {
@@ -65,6 +65,8 @@ function TimerCard({data , onComplete}) {      // function can be passed down as
                         <button className={styles.completeBtn} onClick={() => onComplete?.(data)}>
                             Complete Task
                         </button>
+
+                        
 
                 </div>
                 

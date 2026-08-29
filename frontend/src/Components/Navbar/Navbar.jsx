@@ -33,6 +33,7 @@ function Navbar() {
               {({ isActive }) => (
                 <>
                   {link.name}
+                  
 
                   {isActive && (
                     <motion.div
@@ -40,8 +41,8 @@ function Navbar() {
                       className={styles.underline}
                       transition={{
                         type: "spring",
-                        stiffness: 500,
-                        damping: 35,
+                        stiffness: 1000,
+                        damping: 80,
                       }}
                     />
                   )}
